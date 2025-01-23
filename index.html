@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./scss/landing.css">
+
+    <title>Coffee Shop - Home</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">
+            <a class="header__title--link" href="index.html">
+                <img class="header__image" src="./assets/coffee-beans-logo-and-footer.svg" alt="nitro logo"> nitro
+            </a>
+        </h1>
+
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="index.html">About</a></li>
+                <li class="navbar__item"><a href="./pages/menu.html">Menu</a></li>
+                <li class="navbar__item shop-now"><a href="./pages/menu.html">Shop Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-info">
+        <div class="main-info__about">
+            <h2>Nitro Coffee</h2>
+            <p>Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.</p><br>
+                <div class="button">
+                    <div class="button__inner">
+                        <div class="button__border">
+                            <a class="button__link" href="./pages/menu.html">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div>
+            <img src="./assets/coffeebeans-hero.png" alt="coffee bag">
+        </div>
+   </section>
+
+   <section class="products">
+        <h2>Our Products</h2>
+
+        <div class="products__container">
+            <div class="product-card">
+                <div class="product-card__image">
+                    <img src="./assets/coffeebeans.png" alt="coffee beans">
+                </div>
+
+                <div class="product-card__info">
+                    <div class="product-card__name">
+                        <h3>Coffee Beans</h3>
+                        <p>Pack of 3</p>
+                    </div>
+                    <div class="product-card__price">
+                        <p>$19</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card__image">
+                    <img src="./assets/coldbrew.png" alt="cold brew">
+                </div>
+
+                <div class="product-card__info">
+                    <div class="product-card__name">
+                        <h3>Cold Brew</h3>
+                        <p>1 can</p>
+                    </div>
+                    <div class="product-card__price">
+                        <p>$5</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-card__image">
+                    <img src="./assets/inhousebrew.png" alt="in-house brew">
+                </div>
+
+                <div class="product-card__info">
+                    <div class="product-card__name">
+                        <h3>In-house Brew</h3>
+                        <p>1 cup</p>
+                    </div>
+                    <div class="product-card__price">
+                        <p>$3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="button button--viewall">
+            <div class="button__inner">
+                <div class="button__border">
+                    <a class="button__link" href="./pages/menu.html">View All</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="learn-more">
+        <div class="learn-more__container">
+            <div class="learn-more__text">
+                <h2>We're Different</h2>
+                <p>We grow and roast our own beans. Every bean, every cup, every step of the way, we strive for excellence.</p>
+                <div class="learn-more__icons">
+                    <img src="./assets/planting.svg" alt="Plant Graphic">
+                    <img src="./assets/coffee-beans.svg" alt="Coffee Beans">
+                    <img src="./assets/coffee-cup.svg" alt="Coffee Cup">
+                </div>
+
+                <div class="button">
+                    <div class="button__inner">
+                        <div class="button__border">
+                            <a class="button__link" href="index.html">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tilted-can">
+                <div class="tilted-can__background">
+                    <div class="tilted-can__border">
+                        <img src="./assets/tiltedcan.png" alt="Spinning Can of Cold Brew">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="promotion">
+            <div class="promotion__banner">Get 20% off your first order with code: <span class="heavy-text">FirstNitro </span></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__logo footer__logo--left"></div>
+
+        <div class="footer__container">
+            <div class="footer__item">
+                <h3>Address</h3>
+                    <div>503 Broadway Penthouse</div>
+                    <div>New York</div>
+            </div>
+
+            <div class="footer__item">
+                <h3>Hours</h3>
+                    <div><span class="heavy-text">Monday - Friday:</span> 9am - 7pm</div>
+                    <div><span class="heavy-text">Saturday - Sunday:</span> 10am - 5pm</div>
+            </div>
+
+            <div class="footer__item">
+                <h3>Social</h3>
+                <a href="https:/facebook.com">
+                    <img class="footer__icon" src="./assets/Facebook-Icon.svg" alt="facebook">
+                </a>
+                <a href="https:/yelp.com">
+                    <img class="footer__icon" src="./assets/Yelp-Icon.svg" alt="yelp">
+                </a>
+                <a href="https:instagram.com">
+                    <img class="footer__icon" src="./assets/Instagram-Icon.svg" alt="instagram">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer__logo footer__logo--right"></div>
+    </footer>
+</body>
+</html>

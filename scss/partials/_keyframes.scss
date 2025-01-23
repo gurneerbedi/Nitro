@@ -1,0 +1,21 @@
+@use './variables' as *;
+@keyframes promotion-colorchange {
+    0% {
+      background-color: #393939;
+    }
+    50% {
+      background-color: #5bacc3;
+    }
+    100% {
+      background-color: #393939;
+    }
+}
+
+@keyframes rotate-can {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}

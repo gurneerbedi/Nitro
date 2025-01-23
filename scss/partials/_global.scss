@@ -1,0 +1,115 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    color: $graphite;
+    background-color: $nitro-pink;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 3.75rem;
+  margin: 0;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 2.0625rem;
+  margin-top: 1.5625rem;
+  margin-bottom: .625rem;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 0 1.25rem 1.25rem;
+
+    &__title a{
+        font-size: 3.75rem;
+        font-weight: 300;
+        text-decoration: none;
+        color: $graphite;
+    }
+
+    &__image {
+    width:3.125rem; 
+    }
+}
+
+.navbar__item 
+  a, li{
+    display: inline-block;
+    text-transform:uppercase;
+    list-style-type: none;
+    color: $graphite;
+    margin: 1.25rem 1.25rem 0 1.25rem;
+    font-size: 1.3125rem;
+    font-weight: 400;
+}
+
+.shop-now a {
+    color:$nitro-blue;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem 1.25rem 1.25rem .625rem;
+  
+    &__inner {
+      background-color: $nitro-blue;
+      height: 3.75rem;
+      width: 11.25rem;
+      position: relative;
+    }
+  
+    &__border {
+      border: solid .125rem $graphite;
+      height: 3.75rem;
+      width: 11.25rem;
+      position: absolute;
+      bottom: .3125rem;
+      right: .3125rem;
+      @include flexcenter;
+
+        &:active {
+          transform: translate(.3125rem, .3125rem);
+        }
+    }
+  
+    &__link {
+      color: $white;
+      text-transform: uppercase;
+      font-size: 1.3125rem;
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+  
+    &--viewall {
+      @include flexcenter;
+      padding: 2.5rem;
+    }
+  }
+  
+.heavy-text {
+    font-weight: bold;
+  }
+
+
+
+
+
+
+
+
+

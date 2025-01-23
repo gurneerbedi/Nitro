@@ -1,0 +1,201 @@
+@use './partials/global' as *;
+@use './partials/keyframes';
+@use './partials/variables' as *;
+@use './partials/mixins' as *;
+
+.main-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 6.25rem;
+  max-width: 81.25rem;
+  margin: auto;
+
+  & h2 {
+    font-size: 3.75rem;
+    font-weight: 300;
+    padding: 1.25rem 0;
+  }
+
+  &__about {
+    text-align: left;
+    max-width: 23.4375rem;
+    padding: 1.25rem;
+  }
+}
+
+.products {
+  background-color: $light-gray;
+  font-size: 2.0625rem;
+  font-weight: 300;
+
+  & h2 {
+    padding: 2.5rem;
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 81.25rem;
+    margin: auto;
+  }
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20.625rem;
+  width: 20.625rem;
+  height: 27.5rem;
+  margin: 1.25rem;
+  border-radius: .625rem;
+  box-shadow: 0rem .3125rem .5625rem .0625rem rgba(0, 0, 0, 0.25);
+  background-color: $white;
+  align-items: center;
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    background-color: $nitro-pink;
+    padding: 1.25rem;
+    border-radius: 0 0 .625rem .625rem;
+  }
+
+  &__image {
+    text-align: center;
+    padding: 1.25rem 2.5rem;
+    height: 17.5rem;
+  }
+
+  &__name h3 {
+    margin: 0;
+  }
+
+  &__name p {
+    font-size: 1.125rem;
+    color: $gray;
+  }
+
+  &__price {
+    color: $nitro-blue;
+    font-weight: 700;
+  }
+}
+
+.learn-more {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5rem 2.5rem 2.5rem;
+    width: 90%;
+    max-width: 100rem;
+    margin: auto;
+  }
+
+  &__text {
+    width: 26.25rem;
+  }
+
+  &__text h2 {
+    margin: 1.25rem 0;
+    padding-top: 1.25rem;
+  }
+  &__icons{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 0;
+
+    & img {
+      width: 3.125rem;
+    }
+  }
+}
+
+.tilted-can {
+  flex-direction: column;
+  @include flexcenter;
+  padding: 2.5rem 0 2.5rem;
+
+  &__background {
+    background-image: url(../assets/coldbrewbackground.png);
+    background-size: cover;
+    height: 25rem;
+    width: 25rem;
+    position: relative;
+  }
+
+  &__border {
+    border: solid .3125rem $nitro-blue;
+    height: 25rem;
+    width: 25rem;
+    position: absolute;
+    bottom: .9375rem;
+    right: .9375rem;
+    @include flexcenter;
+  }
+
+  &__background:hover img {
+    animation: rotate-can linear 2s infinite;
+  }
+}
+
+.promotion {
+  background: $white;
+  padding: 5rem 0 12.5rem;
+
+  &__banner {
+    font-size: 2.8125rem;
+    color: $white;
+    padding: 2.5rem;
+    text-align: center;
+    width: 90%;
+    max-width: 81.25rem;
+    margin: auto;
+    animation: promotion-colorchange linear 2.5s infinite;
+  }
+}
+
+.footer {
+  position: relative;
+
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 3.75rem;
+  }
+
+  &__icon {
+    width: 3.125rem;
+  }
+
+  &__logo {
+  background-image: url(../assets/coffee-beans-logo-and-footer.svg);
+  background-size: cover;
+  width: 7.5rem;
+  height: 7.5rem;
+  opacity: 25%;
+  position: absolute;
+
+    &--right {  
+      right: -2.5rem;
+      bottom: -2.5rem;
+    }
+
+    &--left {  
+      left: -2.5rem;
+      top: -2.5rem;
+    }
+  }
+}
